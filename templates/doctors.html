@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Doctors
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color:  #a2a2da;;">
+  
+<h1 class="text-center">OUR DOCTORS</h1>
+
+
+<div class="container text-center ">
+
+    {% for d in doctors %}
+    
+    <div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block">
+        <img  src="{{d.doc_image.url}}" class="card-img-top" style="width:100%; min-height:100px; " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. {{d.doc_name}}</h5>
+          <p class="card-text">{{d.doc_spec}}</p>
+          <h6>{{d.dep_name}} Department</h6>
+         
+      </div>
+    </div>
+    
+    
+    {% endfor %}
+
+    </div>
+</body>
+</html>
+
+
+  {% endblock %}

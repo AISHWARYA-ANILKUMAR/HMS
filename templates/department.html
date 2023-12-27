@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+DEPARTMENT
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body style="background-color:  #a2a2da;;">
+   <h1 class="text-center"> OUR DEPARTMENTS</h1>
+<hr>
+
+{% for d in dept %}
+ <div class="mx-auto w-50 bg-secondary text-center  text-white p-3 my-5 border border-dark rounded">
+     
+    <h1>{{d.dep_name}}</h1>
+    <p>{{d.dep_decription}}</p>
+
+ </div>
+ {% endfor %}
+</body>
+</html>
+
+
+
+
+
+
+{% endblock %}
