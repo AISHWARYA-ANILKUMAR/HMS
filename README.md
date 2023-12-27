@@ -1,4 +1,4 @@
-![img6](https://github.com/AISHWARYA-ANILKUMAR/HMS/assets/106093984/96f71320-54c0-434f-83b1-c06c4ab60233)![img6](https://github.com/AISHWARYA-ANILKUMAR/HMS/assets/106093984/d35add5b-4f41-4d27-9a78-655b10808f17)# Medica Hospital Management System 
+Medica Hospital Management System 
 
 
 The Medical Hospital Management System, developed using Python and Django, is a user-friendly platform that simplifies healthcare processes. With an intuitive 'About' section, patients can learn about the hospital's background. The system allows easy selection and appointment booking with preferred doctors, and provides essential details about medical professionals and hospital departments.
